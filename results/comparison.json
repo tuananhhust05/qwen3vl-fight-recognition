@@ -1,0 +1,16 @@
+{
+  "baseline": {
+    "accuracy": 0.9326241134751773,
+    "fight_recall": 0.8774193548387097,
+    "fight_precision": 1.0,
+    "none_recall": 1.0,
+    "none_precision": 0.8758620689655172
+  },
+  "finetuned": {
+    "accuracy": 0.9929078014184397,
+    "fight_recall": 0.9870967741935484,
+    "fight_precision": 1.0,
+    "none_recall": 1.0,
+    "none_precision": 0.9844961240310077
+  }
+}

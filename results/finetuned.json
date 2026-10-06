@@ -1,0 +1,1719 @@
+{
+  "adapter": "/workspace/vlm-finetune/outputs/fight-lora",
+  "metrics": {
+    "total": 282,
+    "accuracy": 0.9929078014184397,
+    "confusion": {
+      "fight": {
+        "fight": 153,
+        "none": 2,
+        "other": 0
+      },
+      "none": {
+        "fight": 0,
+        "none": 127,
+        "other": 0
+      }
+    },
+    "fight_recall": 0.9870967741935484,
+    "fight_precision": 1.0,
+    "fight_support": 155,
+    "none_recall": 1.0,
+    "none_precision": 0.9844961240310077,
+    "none_support": 127
+  },
+  "predictions": [
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/138.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/074.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/144.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/102.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_059 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/156.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/068.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/023.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/211.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/125.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_085.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_017 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/001.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_057 (4).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/129.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/160.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/070.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/088.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_108 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/175.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_032 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/151.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/035.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_025 (4).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/065.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_016.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_027.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/174.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_023.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/121.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/004.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/150.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/014.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/138.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/029.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/162.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/129.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/054.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_011.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_102.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_045 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_013.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_079 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/003.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/186.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/021.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_014.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/199.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/142.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/006.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_065 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/077.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/106.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/166.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/010.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_055.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_104 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/223.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/174.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/096.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/031.jpg",
+      "label": "fight",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/183.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/075.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/124.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_025 (5).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/038.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/080.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_087.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/016.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/022.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/116.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/080.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/222.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_084 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/089.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/061.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_047 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/048.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/035.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_017 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/068.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_051 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/079.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/037.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/153.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/168.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_047 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_048 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/121.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/012.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_032 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/023.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_036.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_007 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/044.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/037.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/088.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_025 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/182.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/151.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/015.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/054.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_018.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_047.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/198.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/198.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/058.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/099.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/119.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_099 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/037.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_029.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/004.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/169.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/045.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/212.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/050.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_049.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/121.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/186.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_028.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/013.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_032.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/104.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_077 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/014.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/171.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/159.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_031 (4).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/033.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/170.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/148.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/065.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_041 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/020.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/067.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/157.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_093.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_112 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/034.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/052.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_010 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/062.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/106.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_054.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/119.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/193.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/130.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_051 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/072.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/017.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/060.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/209.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/152.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/066.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_028 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_024.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/158.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_105.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/019.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/099.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/012.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/053.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/163.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_047 (5).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/041.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_009.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/073.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/196.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/033.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_110.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/045.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_030 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_023 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_078.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/118.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/201.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/078.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/082.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_022.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_081.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_080.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/115.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/069.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_031 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_043 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/043.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/192.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/113.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_089.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/092.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_058.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_065 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/186.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/151.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_085 (5).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/171.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/124.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/191.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_025.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/169.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/178.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_018 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_094.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_046 (3).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/093.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/019.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/003.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/016.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/047.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/139.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/056.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/105.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/122.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/122.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/030.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/085.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/191.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/143.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/153.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/188.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_104.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/076.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/203.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/192.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_060 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/206.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_094 (4).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/157.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/049.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_071.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_095.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/042.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_093 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_082.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_057 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/141.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/086.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_086.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/206.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/203.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/191.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/190.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/051.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/009.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/092.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/019.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/168.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/047.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/172.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Kicking/040.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/126.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/067.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_050 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/039.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/039.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/114.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/104.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/224.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/006.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_092.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_032 (4).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/074.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/002.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/056.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/132.jpg",
+      "label": "fight",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/226.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_096 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/070.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Handshaking/048.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/091.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_017.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/182.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_065.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_025 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/011.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_095 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/090.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/Hugging/194.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/hii/facial_descriptors_dataset/Boxing-Punching/043.jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/negatives/HighFive/153.jpg",
+      "label": "none",
+      "prediction": "none",
+      "raw": "none"
+    },
+    {
+      "image": "/workspace/vlm-finetune/datasets/action-net/action_net_v1/test/fighting/images_031 (2).jpg",
+      "label": "fight",
+      "prediction": "fight",
+      "raw": "fight"
+    }
+  ]
+}
