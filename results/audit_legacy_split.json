@@ -1,0 +1,51 @@
+{
+  "train_images": 1376,
+  "test_images": 282,
+  "max_distance": 6,
+  "test_exact_duplicates_of_train": 2,
+  "test_near_duplicates_of_train": 6,
+  "test_leaked_total": 8,
+  "test_leaked_fraction": 0.028368794326241134,
+  "pairs": [
+    {
+      "test": "datasets/action-net/action_net_v1/test/fighting/images_017 (3).jpg",
+      "train": "datasets/action-net/action_net_v1/train/fighting/images_292.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/action-net/action_net_v1/test/fighting/images_099 (2).jpg",
+      "train": "datasets/action-net/action_net_v1/train/fighting/images_278 (2).jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/125.jpg",
+      "train": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/146.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/negatives/HighFive/035.jpg",
+      "train": "datasets/negatives/HighFive/065.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/action-net/action_net_v1/test/fighting/images_025.jpg",
+      "train": "datasets/action-net/action_net_v1/train/fighting/images_619.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/action-net/action_net_v1/test/fighting/images_057 (2).jpg",
+      "train": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/180.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/negatives/Hugging/203.jpg",
+      "train": "datasets/negatives/Hugging/197.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "datasets/action-net/action_net_v1/test/fighting/images_050 (2).jpg",
+      "train": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/060.jpg",
+      "hamming": 0
+    }
+  ]
+}

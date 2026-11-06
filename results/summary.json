@@ -1,0 +1,794 @@
+{
+  "baseline": {
+    "test_at_0.5": {
+      "accuracy": 0.8819875776397516,
+      "macro_f1": 0.8808104422365088,
+      "fight_recall": 0.8061224489795918,
+      "fight_precision": 1.0,
+      "none_recall": 1.0,
+      "roc_auc": 0.994634758665371,
+      "pr_auc_fight": 0.9971695860880936,
+      "confusion": {
+        "fight": {
+          "fight": 158,
+          "none": 38,
+          "other": 0
+        },
+        "none": {
+          "fight": 0,
+          "none": 126,
+          "other": 0
+        }
+      }
+    },
+    "val_threshold": 0.008577484637498856,
+    "test_at_val_threshold": {
+      "accuracy": 0.9472049689440993,
+      "macro_f1": 0.9457348203221809,
+      "fight_recall": 0.9132653061224489,
+      "fight_precision": 1.0,
+      "none_recall": 1.0,
+      "roc_auc": 0.994634758665371,
+      "pr_auc_fight": 0.9971695860880936,
+      "confusion": {
+        "fight": {
+          "fight": 179,
+          "none": 17,
+          "other": 0
+        },
+        "none": {
+          "fight": 0,
+          "none": 126,
+          "other": 0
+        }
+      }
+    },
+    "ci95_at_0.5": {
+      "accuracy": [
+        0.8478260869565217,
+        0.9161490683229814
+      ],
+      "macro_f1": [
+        0.8448005783829377,
+        0.9153646213603575
+      ],
+      "fight_recall": [
+        0.75,
+        0.8587570621468926
+      ],
+      "none_recall": [
+        1.0,
+        1.0
+      ]
+    },
+    "format_compliance": 1.0,
+    "free_generation_accuracy": 0.8819875776397516,
+    "by_source_at_0.5": {
+      "actionnet_fighting": {
+        "images": 129,
+        "accuracy": 0.8062015503875969
+      },
+      "hii_boxing_punching": {
+        "images": 37,
+        "accuracy": 0.7837837837837838
+      },
+      "hii_handshaking": {
+        "images": 45,
+        "accuracy": 1.0
+      },
+      "hii_highfive": {
+        "images": 39,
+        "accuracy": 1.0
+      },
+      "hii_hugging": {
+        "images": 42,
+        "accuracy": 1.0
+      },
+      "hii_kicking": {
+        "images": 30,
+        "accuracy": 0.8333333333333334
+      }
+    },
+    "throughput": {
+      "batch_size": 16,
+      "images": 322,
+      "seconds": 18.163172374945134,
+      "images_per_second": 17.728180592734844,
+      "peak_vram_gb": 5.669623851776123
+    },
+    "latency": {
+      "batch_size": 1,
+      "images": 50,
+      "p50_ms": 166.3226808886975,
+      "p95_ms": 178.51208220236003,
+      "mean_ms": 167.00478871818632
+    }
+  },
+  "finetuned_runs": {
+    "42": {
+      "test_at_0.5": {
+        "accuracy": 0.9937888198757764,
+        "macro_f1": 0.9934988895618817,
+        "fight_recall": 0.9897959183673469,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9999999999999999,
+        "pr_auc_fight": 0.9999999999999999,
+        "confusion": {
+          "fight": {
+            "fight": 194,
+            "none": 2,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "val_threshold": 0.5,
+      "test_at_val_threshold": {
+        "accuracy": 0.9937888198757764,
+        "macro_f1": 0.9934988895618817,
+        "fight_recall": 0.9897959183673469,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9999999999999999,
+        "pr_auc_fight": 0.9999999999999999,
+        "confusion": {
+          "fight": {
+            "fight": 194,
+            "none": 2,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "ci95_at_0.5": {
+        "accuracy": [
+          0.984472049689441,
+          1.0
+        ],
+        "macro_f1": [
+          0.983630725433379,
+          1.0
+        ],
+        "fight_recall": [
+          0.9740932642487047,
+          1.0
+        ],
+        "none_recall": [
+          1.0,
+          1.0
+        ]
+      },
+      "format_compliance": 1.0,
+      "free_generation_accuracy": 0.9937888198757764,
+      "by_source_at_0.5": {
+        "actionnet_fighting": {
+          "images": 129,
+          "accuracy": 1.0
+        },
+        "hii_boxing_punching": {
+          "images": 37,
+          "accuracy": 0.972972972972973
+        },
+        "hii_handshaking": {
+          "images": 45,
+          "accuracy": 1.0
+        },
+        "hii_highfive": {
+          "images": 39,
+          "accuracy": 1.0
+        },
+        "hii_hugging": {
+          "images": 42,
+          "accuracy": 1.0
+        },
+        "hii_kicking": {
+          "images": 30,
+          "accuracy": 0.9666666666666667
+        }
+      },
+      "throughput": {
+        "batch_size": 16,
+        "images": 322,
+        "seconds": 23.09618324507028,
+        "images_per_second": 13.941697491022838,
+        "peak_vram_gb": 5.7918925285339355
+      },
+      "latency": {
+        "batch_size": 1,
+        "images": 50,
+        "p50_ms": 178.1613458879292,
+        "p95_ms": 188.1583919748664,
+        "mean_ms": 178.98573074489832
+      }
+    },
+    "43": {
+      "test_at_0.5": {
+        "accuracy": 0.9813664596273292,
+        "macro_f1": 0.9806000722978673,
+        "fight_recall": 0.9693877551020408,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9995950761256884,
+        "pr_auc_fight": 0.9997423872571006,
+        "confusion": {
+          "fight": {
+            "fight": 190,
+            "none": 6,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "val_threshold": 0.9241418242454529,
+      "test_at_val_threshold": {
+        "accuracy": 0.9751552795031055,
+        "macro_f1": 0.9741987179487179,
+        "fight_recall": 0.9591836734693877,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9995950761256884,
+        "pr_auc_fight": 0.9997423872571006,
+        "confusion": {
+          "fight": {
+            "fight": 188,
+            "none": 8,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "ci95_at_0.5": {
+        "accuracy": [
+          0.9658385093167702,
+          0.9937888198757764
+        ],
+        "macro_f1": [
+          0.9643873354849737,
+          0.993635357368754
+        ],
+        "fight_recall": [
+          0.9441624365482234,
+          0.9899497487437185
+        ],
+        "none_recall": [
+          1.0,
+          1.0
+        ]
+      },
+      "format_compliance": 1.0,
+      "free_generation_accuracy": 0.9813664596273292,
+      "by_source_at_0.5": {
+        "actionnet_fighting": {
+          "images": 129,
+          "accuracy": 0.9922480620155039
+        },
+        "hii_boxing_punching": {
+          "images": 37,
+          "accuracy": 0.918918918918919
+        },
+        "hii_handshaking": {
+          "images": 45,
+          "accuracy": 1.0
+        },
+        "hii_highfive": {
+          "images": 39,
+          "accuracy": 1.0
+        },
+        "hii_hugging": {
+          "images": 42,
+          "accuracy": 1.0
+        },
+        "hii_kicking": {
+          "images": 30,
+          "accuracy": 0.9333333333333333
+        }
+      },
+      "throughput": {
+        "batch_size": 16,
+        "images": 322,
+        "seconds": 29.659385012928396,
+        "images_per_second": 10.856597325252752,
+        "peak_vram_gb": 5.7918925285339355
+      },
+      "latency": {
+        "batch_size": 1,
+        "images": 50,
+        "p50_ms": 226.47447092458606,
+        "p95_ms": 242.8546459414065,
+        "mean_ms": 226.04535905178636
+      }
+    },
+    "44": {
+      "test_at_0.5": {
+        "accuracy": 0.9937888198757764,
+        "macro_f1": 0.9934807256235828,
+        "fight_recall": 0.9948979591836735,
+        "fight_precision": 0.9948979591836735,
+        "none_recall": 0.9920634920634921,
+        "roc_auc": 0.9998380304502753,
+        "pr_auc_fight": 0.9998962691018085,
+        "confusion": {
+          "fight": {
+            "fight": 195,
+            "none": 1,
+            "other": 0
+          },
+          "none": {
+            "fight": 1,
+            "none": 125,
+            "other": 0
+          }
+        }
+      },
+      "val_threshold": 0.999373733997345,
+      "test_at_val_threshold": {
+        "accuracy": 0.984472049689441,
+        "macro_f1": 0.9838124252204427,
+        "fight_recall": 0.9744897959183674,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9998380304502753,
+        "pr_auc_fight": 0.9998962691018085,
+        "confusion": {
+          "fight": {
+            "fight": 191,
+            "none": 5,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "ci95_at_0.5": {
+        "accuracy": [
+          0.984472049689441,
+          1.0
+        ],
+        "macro_f1": [
+          0.9834775201912913,
+          1.0
+        ],
+        "fight_recall": [
+          0.9841269841269841,
+          1.0
+        ],
+        "none_recall": [
+          0.9734513274336283,
+          1.0
+        ]
+      },
+      "format_compliance": 1.0,
+      "free_generation_accuracy": 0.9937888198757764,
+      "by_source_at_0.5": {
+        "actionnet_fighting": {
+          "images": 129,
+          "accuracy": 1.0
+        },
+        "hii_boxing_punching": {
+          "images": 37,
+          "accuracy": 0.972972972972973
+        },
+        "hii_handshaking": {
+          "images": 45,
+          "accuracy": 1.0
+        },
+        "hii_highfive": {
+          "images": 39,
+          "accuracy": 0.9743589743589743
+        },
+        "hii_hugging": {
+          "images": 42,
+          "accuracy": 1.0
+        },
+        "hii_kicking": {
+          "images": 30,
+          "accuracy": 1.0
+        }
+      },
+      "throughput": {
+        "batch_size": 16,
+        "images": 322,
+        "seconds": 23.50910275708884,
+        "images_per_second": 13.696822176801513,
+        "peak_vram_gb": 5.7918925285339355
+      },
+      "latency": {
+        "batch_size": 1,
+        "images": 50,
+        "p50_ms": 183.59367502853274,
+        "p95_ms": 200.3654029686004,
+        "mean_ms": 185.1483565988019
+      }
+    },
+    "45": {
+      "test_at_0.5": {
+        "accuracy": 0.984472049689441,
+        "macro_f1": 0.9838124252204427,
+        "fight_recall": 0.9744897959183674,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9996760609005506,
+        "pr_auc_fight": 0.9997929266226719,
+        "confusion": {
+          "fight": {
+            "fight": 191,
+            "none": 5,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "val_threshold": 0.5,
+      "test_at_val_threshold": {
+        "accuracy": 0.984472049689441,
+        "macro_f1": 0.9838124252204427,
+        "fight_recall": 0.9744897959183674,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9996760609005506,
+        "pr_auc_fight": 0.9997929266226719,
+        "confusion": {
+          "fight": {
+            "fight": 191,
+            "none": 5,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "ci95_at_0.5": {
+        "accuracy": [
+          0.9720496894409938,
+          0.9968944099378882
+        ],
+        "macro_f1": [
+          0.9697377901694808,
+          0.9967162626581956
+        ],
+        "fight_recall": [
+          0.9516908212560387,
+          0.9948186528497409
+        ],
+        "none_recall": [
+          1.0,
+          1.0
+        ]
+      },
+      "format_compliance": 1.0,
+      "free_generation_accuracy": 0.984472049689441,
+      "by_source_at_0.5": {
+        "actionnet_fighting": {
+          "images": 129,
+          "accuracy": 0.9922480620155039
+        },
+        "hii_boxing_punching": {
+          "images": 37,
+          "accuracy": 0.918918918918919
+        },
+        "hii_handshaking": {
+          "images": 45,
+          "accuracy": 1.0
+        },
+        "hii_highfive": {
+          "images": 39,
+          "accuracy": 1.0
+        },
+        "hii_hugging": {
+          "images": 42,
+          "accuracy": 1.0
+        },
+        "hii_kicking": {
+          "images": 30,
+          "accuracy": 0.9666666666666667
+        }
+      },
+      "throughput": {
+        "batch_size": 16,
+        "images": 322,
+        "seconds": 24.669232774991542,
+        "images_per_second": 13.052696163555918,
+        "peak_vram_gb": 5.7918925285339355
+      },
+      "latency": {
+        "batch_size": 1,
+        "images": 50,
+        "p50_ms": 222.53889101557434,
+        "p95_ms": 237.3232280369848,
+        "mean_ms": 223.6266951262951
+      }
+    },
+    "46": {
+      "test_at_0.5": {
+        "accuracy": 0.984472049689441,
+        "macro_f1": 0.9837247151825157,
+        "fight_recall": 0.9846938775510204,
+        "fight_precision": 0.9897435897435898,
+        "none_recall": 0.9841269841269841,
+        "roc_auc": 0.9995545837382572,
+        "pr_auc_fight": 0.9997166603024351,
+        "confusion": {
+          "fight": {
+            "fight": 193,
+            "none": 3,
+            "other": 0
+          },
+          "none": {
+            "fight": 2,
+            "none": 124,
+            "other": 0
+          }
+        }
+      },
+      "val_threshold": 0.9982993006706238,
+      "test_at_val_threshold": {
+        "accuracy": 0.9813664596273292,
+        "macro_f1": 0.9806000722978673,
+        "fight_recall": 0.9693877551020408,
+        "fight_precision": 1.0,
+        "none_recall": 1.0,
+        "roc_auc": 0.9995545837382572,
+        "pr_auc_fight": 0.9997166603024351,
+        "confusion": {
+          "fight": {
+            "fight": 190,
+            "none": 6,
+            "other": 0
+          },
+          "none": {
+            "fight": 0,
+            "none": 126,
+            "other": 0
+          }
+        }
+      },
+      "ci95_at_0.5": {
+        "accuracy": [
+          0.968944099378882,
+          0.9968944099378882
+        ],
+        "macro_f1": [
+          0.9682383113040047,
+          0.9966955040382582
+        ],
+        "fight_recall": [
+          0.9668508287292817,
+          1.0
+        ],
+        "none_recall": [
+          0.959349593495935,
+          1.0
+        ]
+      },
+      "format_compliance": 1.0,
+      "free_generation_accuracy": 0.984472049689441,
+      "by_source_at_0.5": {
+        "actionnet_fighting": {
+          "images": 129,
+          "accuracy": 1.0
+        },
+        "hii_boxing_punching": {
+          "images": 37,
+          "accuracy": 0.9459459459459459
+        },
+        "hii_handshaking": {
+          "images": 45,
+          "accuracy": 1.0
+        },
+        "hii_highfive": {
+          "images": 39,
+          "accuracy": 0.9487179487179487
+        },
+        "hii_hugging": {
+          "images": 42,
+          "accuracy": 1.0
+        },
+        "hii_kicking": {
+          "images": 30,
+          "accuracy": 0.9666666666666667
+        }
+      },
+      "throughput": {
+        "batch_size": 16,
+        "images": 322,
+        "seconds": 84.61606741999276,
+        "images_per_second": 3.805423837552619,
+        "peak_vram_gb": 5.7918925285339355
+      },
+      "latency": {
+        "batch_size": 1,
+        "images": 50,
+        "p50_ms": 361.7259811144322,
+        "p95_ms": 470.9777811076492,
+        "mean_ms": 383.2863657036796
+      }
+    }
+  },
+  "finetuned_aggregate": {
+    "test_at_0.5": {
+      "accuracy": {
+        "mean": 0.9875776397515528,
+        "std": 0.005810026998096178,
+        "values": [
+          0.9937888198757764,
+          0.9813664596273292,
+          0.9937888198757764,
+          0.984472049689441,
+          0.984472049689441
+        ]
+      },
+      "macro_f1": {
+        "mean": 0.987023365577258,
+        "std": 0.006043174633380492,
+        "values": [
+          0.9934988895618817,
+          0.9806000722978673,
+          0.9934807256235828,
+          0.9838124252204427,
+          0.9837247151825157
+        ]
+      },
+      "fight_recall": {
+        "mean": 0.9826530612244898,
+        "std": 0.010579817017003959,
+        "values": [
+          0.9897959183673469,
+          0.9693877551020408,
+          0.9948979591836735,
+          0.9744897959183674,
+          0.9846938775510204
+        ]
+      },
+      "fight_precision": {
+        "mean": 0.9969283097854527,
+        "std": 0.004583894849593758,
+        "values": [
+          1.0,
+          1.0,
+          0.9948979591836735,
+          1.0,
+          0.9897435897435898
+        ]
+      },
+      "none_recall": {
+        "mean": 0.9952380952380953,
+        "std": 0.007098628499999351,
+        "values": [
+          1.0,
+          1.0,
+          0.9920634920634921,
+          1.0,
+          0.9841269841269841
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.9997327502429543,
+        "std": 0.00018467370021036454,
+        "values": [
+          0.9999999999999999,
+          0.9995950761256884,
+          0.9998380304502753,
+          0.9996760609005506,
+          0.9995545837382572
+        ]
+      },
+      "pr_auc_fight": {
+        "mean": 0.9998296486568032,
+        "std": 0.00011745987795117499,
+        "values": [
+          0.9999999999999999,
+          0.9997423872571006,
+          0.9998962691018085,
+          0.9997929266226719,
+          0.9997166603024351
+        ]
+      }
+    },
+    "test_at_val_threshold": {
+      "accuracy": {
+        "mean": 0.9838509316770186,
+        "std": 0.006732758816359891,
+        "values": [
+          0.9937888198757764,
+          0.9751552795031055,
+          0.984472049689441,
+          0.984472049689441,
+          0.9813664596273292
+        ]
+      },
+      "macro_f1": {
+        "mean": 0.9831845060498704,
+        "std": 0.0069749329355145275,
+        "values": [
+          0.9934988895618817,
+          0.9741987179487179,
+          0.9838124252204427,
+          0.9838124252204427,
+          0.9806000722978673
+        ]
+      },
+      "fight_recall": {
+        "mean": 0.9734693877551021,
+        "std": 0.011060960912591239,
+        "values": [
+          0.9897959183673469,
+          0.9591836734693877,
+          0.9744897959183674,
+          0.9744897959183674,
+          0.9693877551020408
+        ]
+      },
+      "fight_precision": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "none_recall": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.9997327502429543,
+        "std": 0.00018467370021036454,
+        "values": [
+          0.9999999999999999,
+          0.9995950761256884,
+          0.9998380304502753,
+          0.9996760609005506,
+          0.9995545837382572
+        ]
+      },
+      "pr_auc_fight": {
+        "mean": 0.9998296486568032,
+        "std": 0.00011745987795117499,
+        "values": [
+          0.9999999999999999,
+          0.9997423872571006,
+          0.9998962691018085,
+          0.9997929266226719,
+          0.9997166603024351
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "train_images": 1130,
+  "test_images": 322,
+  "max_distance": 6,
+  "test_exact_duplicates_of_train": 0,
+  "test_near_duplicates_of_train": 0,
+  "test_leaked_total": 0,
+  "test_leaked_fraction": 0.0,
+  "pairs": []
+}

@@ -1,12 +1,49 @@
 {
   "train": {
-    "fight": 866,
-    "none": 510,
-    "total": 1376
+    "fight": 689,
+    "none": 441,
+    "total": 1130,
+    "by_source": {
+      "actionnet_fighting": 452,
+      "hii_boxing_punching": 131,
+      "hii_handshaking": 158,
+      "hii_highfive": 137,
+      "hii_hugging": 146,
+      "hii_kicking": 106
+    }
+  },
+  "val": {
+    "fight": 98,
+    "none": 64,
+    "total": 162,
+    "by_source": {
+      "actionnet_fighting": 64,
+      "hii_boxing_punching": 19,
+      "hii_handshaking": 23,
+      "hii_highfive": 20,
+      "hii_hugging": 21,
+      "hii_kicking": 15
+    }
   },
   "test": {
-    "fight": 155,
-    "none": 127,
-    "total": 282
+    "fight": 196,
+    "none": 126,
+    "total": 322,
+    "by_source": {
+      "actionnet_fighting": 129,
+      "hii_boxing_punching": 37,
+      "hii_handshaking": 45,
+      "hii_highfive": 39,
+      "hii_hugging": 42,
+      "hii_kicking": 30
+    }
+  },
+  "audit": {
+    "raw_images": 1658,
+    "duplicate_groups": 41,
+    "duplicates_removed": 44,
+    "label_conflict_groups_dropped": 0,
+    "label_conflict_images_dropped": 0,
+    "near_duplicate_hamming_bits": 6
   }
 }

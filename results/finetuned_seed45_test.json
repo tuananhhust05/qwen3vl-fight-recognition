@@ -1,0 +1,2675 @@
+{
+  "model": "/dev/shm/cvft/models/Qwen3-VL-4B-Instruct",
+  "adapter": "../outputs/fight-lora-seed45",
+  "quantization": "nf4-double-quant",
+  "split": "test",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "metrics": {
+    "total": 322,
+    "accuracy": 0.984472049689441,
+    "confusion": {
+      "fight": {
+        "fight": 191,
+        "none": 5,
+        "other": 0
+      },
+      "none": {
+        "fight": 0,
+        "none": 126,
+        "other": 0
+      }
+    },
+    "fight_recall": 0.9744897959183674,
+    "fight_precision": 1.0,
+    "fight_f1": 0.9870801033591732,
+    "fight_support": 196,
+    "none_recall": 1.0,
+    "none_precision": 0.9618320610687023,
+    "none_f1": 0.9805447470817121,
+    "none_support": 126,
+    "macro_f1": 0.9838124252204427,
+    "threshold": 0.5,
+    "roc_auc": 0.9996760609005506,
+    "pr_auc_fight": 0.9997929266226719,
+    "ci95": {
+      "accuracy": [
+        0.9720496894409938,
+        0.9968944099378882
+      ],
+      "macro_f1": [
+        0.9697377901694808,
+        0.9967162626581956
+      ],
+      "fight_recall": [
+        0.9516908212560387,
+        0.9948186528497409
+      ],
+      "none_recall": [
+        1.0,
+        1.0
+      ]
+    },
+    "free_generation": {
+      "accuracy": 0.984472049689441,
+      "format_compliance": 1.0
+    },
+    "by_source": {
+      "actionnet_fighting": {
+        "images": 129,
+        "accuracy": 0.9922480620155039
+      },
+      "hii_boxing_punching": {
+        "images": 37,
+        "accuracy": 0.918918918918919
+      },
+      "hii_handshaking": {
+        "images": 45,
+        "accuracy": 1.0
+      },
+      "hii_highfive": {
+        "images": 39,
+        "accuracy": 1.0
+      },
+      "hii_hugging": {
+        "images": 42,
+        "accuracy": 1.0
+      },
+      "hii_kicking": {
+        "images": 30,
+        "accuracy": 0.9666666666666667
+      }
+    },
+    "throughput": {
+      "batch_size": 16,
+      "images": 322,
+      "seconds": 24.669232774991542,
+      "images_per_second": 13.052696163555918,
+      "peak_vram_gb": 5.7918925285339355
+    },
+    "latency": {
+      "batch_size": 1,
+      "images": 50,
+      "p50_ms": 222.53889101557434,
+      "p95_ms": 237.3232280369848,
+      "mean_ms": 223.6266951262951
+    }
+  },
+  "predictions": [
+    {
+      "image": "datasets/negatives/Handshaking/013.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.860985595226322e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/022.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 5.438597055346106e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/042.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/130.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_158.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.999993085861206,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/003.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.0007480915074094e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_539 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/200.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.573710259328287e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_137 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/218.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.1297852804275097e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_639.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.3775406777858734,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/188.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.05868296470785e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/093.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.4449801710725296e-07,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/144.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.384939998250016e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/189.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.573710259328287e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/173.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/067.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.879528650772233e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_507 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/169.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.4783637855564358e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_502 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/037.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/190.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.6052279505629485e-09,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/198.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.7656539208141253e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/159.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.4927885156930145e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/185.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 7.433680407342713e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_117.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_179.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_521 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.999998927116394,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/102.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.070923297957771e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/029.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 3.266131668507727e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/092.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/052.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 8.966731003534623e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_467.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_095 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_036.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/133.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.1861120086109622e-08,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_251 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/152.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_023 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_268 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999910593032837,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/116.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999992847442627,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_683.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_308.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/088.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.1399918552548738e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_327 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.562176525592804,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_203.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/042.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.070923297957771e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_296 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/060.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.37509263958141e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/063.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.1513510631000479e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_721.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_349.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/083.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/008.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 8.152020392060422e-09,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/212.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.070923297957771e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/208.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.4133626954497833e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/167.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 3.098819161342914e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_023.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/111.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 9.450863485901961e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_249 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_142 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/007.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 6.101936989542922e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/028.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 7.835042293777295e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_092.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/180.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.6701422282494605e-05,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_459.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/118.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 9.545034901359273e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/136.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999974966049194,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/012.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 4.75219310517444e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/138.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/096.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 5.438597055346106e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/127.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.734698101650168e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/147.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 2.1444948288262822e-05,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/122.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.4637784257268138e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_425.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_326.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_436.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.999998927116394,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/055.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 6.224144116773189e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/051.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/087.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.999987006187439,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_372 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_124 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999994039535522,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_234 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/004.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/089.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.384939998250016e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/128.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.999993085861206,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_025 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_287.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/063.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.006039218945376e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/073.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.2671443715427397e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/160.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.7656539208141253e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/115.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/073.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.573710259328287e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/118.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9933071732521057,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/180.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.1297852804275097e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_284.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/161.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/140.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.29177994256241e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/016.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 4.75219310517444e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_474.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999971389770508,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_234 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999991655349731,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_295.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_153.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_605 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/069.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.573710259328287e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_573 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/186.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.999373733997345,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_605.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_115 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999985694885254,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/185.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_209.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/212.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.006039218945376e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/060.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.0007480915074094e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/177.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.389552585749938e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/178.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.569011409853106e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/196.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 3.581747953784742e-10,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/023.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/197.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.2897348947448215e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/101.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_426.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999996423721313,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_517 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_232.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_059 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_140 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999833106994629,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_322 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/023.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.4133626954497833e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/174.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.070923297957771e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_124 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_347 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/032.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.9110711237401166e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/192.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.9810088085995409e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/165.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 0.10669060051441193,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_465 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_093 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/090.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 4.4642721051986467e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/051.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.384939998250016e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/108.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/033.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.1297852804275097e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/041.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 4.508755348242577e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/025.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_683 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999995231628418,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/028.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_480 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/003.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.2671443715427397e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/075.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_424 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999151229858398,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_363.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/167.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.3887944613766301e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/046.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.29177994256241e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/091.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.1297852804275097e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/111.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/110.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_456 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/001.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/143.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 3.7010116651046976e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/039.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_027.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/084.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/139.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/082.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_291 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999992847442627,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/095.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.2671443715427397e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/092.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.5946095966178362e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_022.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_361 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_261 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999996423721313,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/038.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.2135149655978505e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/015.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.1399918552548738e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_370.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_029.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_028.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/064.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 4.75219310517444e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_271 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999545812606812,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_541 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_768.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/132.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.6586784029604118e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/080.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/098.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 3.4767788691450474e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/131.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_517 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_269 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/100.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_196 (5).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/021.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.1032560420787263e-09,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_024.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_210.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/025.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/187.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 9.056077415747765e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_160.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/054.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.1297852804275097e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/054.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/047.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/191.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 8.340358568711959e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_486.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_048 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9990890026092529,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/109.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/002.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 9.545034901359273e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_120.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_128 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/201.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.9110711237401166e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_466 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/035.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_343.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_584.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/213.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 3.068246611642733e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/157.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 0.00033535013790242374,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/042.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.00023050671734381467,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/043.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/191.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 3.068246611642733e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/068.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/213.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.879528650772233e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/017.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 3.775134718719819e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_081.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/145.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 8.340358568711959e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_211.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_094 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_443 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/103.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_099 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_142.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/022.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 0.9998766183853149,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/125.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/179.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 3.978962558742749e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_463 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/140.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/058.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.0007480915074094e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/210.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 3.511422055901825e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_208 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999994039535522,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/148.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.6586784029604118e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/048.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.9110711237401166e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/096.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_393 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999984502792358,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/068.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 5.7893564074651405e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/143.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.1399918552548738e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/148.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_017 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/115.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/164.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 4.4642721051986467e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/082.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.2671443715427397e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_412.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/159.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.020683967374204e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_317 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/129.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.4637784257268138e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/098.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/120.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 6.495477983606279e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/085.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 0.9999687671661377,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_474 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/088.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.9999984502792358,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_291 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/086.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 3.3982678893096363e-09,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/026.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.8982568988912263e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_394 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999997615814209,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/183.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.4637784257268138e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/079.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 2.389552585749938e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_427 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9996646642684937,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/100.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.384939998250016e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/168.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_365 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_188.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/104.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/121.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.882350662401084e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_451.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_542.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_640 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_493 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/146.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/146.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 9.056077415747765e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/146.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.389552585749938e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_438 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999910593032837,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/test/fighting/images_014.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/133.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.2256066821147993e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_561.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999687671661377,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/127.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 3.939706633843132e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/133.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/121.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/058.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.070923297957771e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_444 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_332.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_163 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/032.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_230 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999852180480957,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_169 (3).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/055.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 3.978962558742749e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Hugging/161.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 4.8473686869998645e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/069.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 1.006039218945376e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_330.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/182.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 5.602796449011294e-09,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/171.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/084.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/020.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/046.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 9.450863485901961e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_600.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_375.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999885559082031,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_460 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/056.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 5.7893564074651405e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_274 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_441.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.999993085861206,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_632.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/156.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.5581841372735994e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/001.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.29177994256241e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/049.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 2.2671443715427397e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/003.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/132.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 8.340358568711959e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Boxing-Punching/147.jpg",
+      "source": "hii_boxing_punching",
+      "label": "fight",
+      "p_fight": 0.01098694372922182,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/138.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 4.23558367199095e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/094.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 5.05868296470785e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_216.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 0.9999998807907104,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/101.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 1.4493370696297414e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/Handshaking/031.jpg",
+      "source": "hii_handshaking",
+      "label": "none",
+      "p_fight": 4.799545309797093e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/023.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 9.056077415747765e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_203 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_498 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/HighFive/144.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 2.4133626954497833e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/183.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 5.438597055346106e-12,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_327 (4).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/hii/facial_descriptors_dataset/Kicking/089.jpg",
+      "source": "hii_kicking",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/negatives/Hugging/067.jpg",
+      "source": "hii_hugging",
+      "label": "none",
+      "p_fight": 4.1937956471276017e-13,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/negatives/HighFive/020.jpg",
+      "source": "hii_highfive",
+      "label": "none",
+      "p_fight": 1.3887944613766301e-11,
+      "free_token": "none",
+      "free_prediction": "none"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_114 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_260 (2).jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_154.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    },
+    {
+      "image": "datasets/action-net/action_net_v1/train/fighting/images_470.jpg",
+      "source": "actionnet_fighting",
+      "label": "fight",
+      "p_fight": 1.0,
+      "free_token": "fight",
+      "free_prediction": "fight"
+    }
+  ]
+}
