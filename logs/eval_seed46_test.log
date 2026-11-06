@@ -1,0 +1,163 @@
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:35,  4.57it/s]/usr/local/lib/python3.12/dist-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   0%|          | 3/713 [00:00<01:12,  9.83it/s]Loading weights:   2%|▏         | 14/713 [00:00<00:16, 41.59it/s]Loading weights:   4%|▎         | 25/713 [00:00<00:11, 60.26it/s]Loading weights:   5%|▍         | 35/713 [00:00<00:09, 71.33it/s]Loading weights:   6%|▌         | 44/713 [00:00<00:08, 75.01it/s]Loading weights:   7%|▋         | 53/713 [00:00<00:08, 78.61it/s]Loading weights:   9%|▉         | 63/713 [00:00<00:07, 83.87it/s]Loading weights:  10%|█         | 72/713 [00:01<00:07, 83.70it/s]Loading weights:  12%|█▏        | 82/713 [00:01<00:07, 85.02it/s]Loading weights:  13%|█▎        | 93/713 [00:01<00:07, 86.64it/s]Loading weights:  15%|█▍        | 104/713 [00:01<00:06, 87.62it/s]Loading weights:  16%|█▌        | 115/713 [00:01<00:06, 89.80it/s]Loading weights:  18%|█▊        | 126/713 [00:01<00:06, 90.09it/s]Loading weights:  19%|█▉        | 137/713 [00:01<00:06, 91.03it/s]Loading weights:  21%|██        | 148/713 [00:01<00:06, 90.82it/s]Loading weights:  22%|██▏       | 159/713 [00:02<00:06, 90.92it/s]Loading weights:  24%|██▍       | 170/713 [00:02<00:05, 91.58it/s]Loading weights:  25%|██▌       | 181/713 [00:02<00:05, 92.13it/s]Loading weights:  27%|██▋       | 192/713 [00:02<00:05, 92.43it/s]Loading weights:  28%|██▊       | 203/713 [00:02<00:05, 92.83it/s]Loading weights:  30%|███       | 214/713 [00:02<00:05, 92.19it/s]Loading weights:  32%|███▏      | 225/713 [00:02<00:05, 92.82it/s]Loading weights:  33%|███▎      | 236/713 [00:02<00:05, 93.16it/s]Loading weights:  35%|███▍      | 247/713 [00:03<00:05, 93.16it/s]Loading weights:  36%|███▌      | 258/713 [00:03<00:04, 92.23it/s]Loading weights:  38%|███▊      | 269/713 [00:03<00:04, 91.55it/s]Loading weights:  39%|███▉      | 280/713 [00:03<00:04, 92.37it/s]Loading weights:  41%|████      | 291/713 [00:03<00:04, 92.85it/s]Loading weights:  42%|████▏     | 302/713 [00:03<00:04, 93.24it/s]Loading weights:  44%|████▍     | 313/713 [00:03<00:04, 92.21it/s]Loading weights:  45%|████▌     | 324/713 [00:03<00:04, 91.72it/s]Loading weights:  47%|████▋     | 335/713 [00:03<00:04, 92.45it/s]Loading weights:  49%|████▊     | 346/713 [00:04<00:03, 92.84it/s]Loading weights:  50%|█████     | 357/713 [00:04<00:03, 93.03it/s]Loading weights:  52%|█████▏    | 368/713 [00:04<00:03, 92.02it/s]Loading weights:  53%|█████▎    | 379/713 [00:04<00:03, 92.48it/s]Loading weights:  55%|█████▍    | 390/713 [00:04<00:03, 93.07it/s]Loading weights:  57%|█████▋    | 407/713 [00:04<00:02, 112.71it/s]Loading weights:  60%|█████▉    | 427/713 [00:04<00:02, 135.22it/s]Loading weights:  63%|██████▎   | 446/713 [00:04<00:01, 149.50it/s]Loading weights:  65%|██████▌   | 466/713 [00:04<00:01, 160.52it/s]Loading weights:  68%|██████▊   | 487/713 [00:05<00:01, 172.75it/s]Loading weights:  71%|███████   | 506/713 [00:05<00:01, 176.23it/s]Loading weights:  74%|███████▍  | 526/713 [00:05<00:01, 178.64it/s]Loading weights:  77%|███████▋  | 547/713 [00:05<00:00, 186.20it/s]Loading weights:  79%|███████▉  | 566/713 [00:05<00:00, 185.37it/s]Loading weights:  82%|████████▏ | 586/713 [00:05<00:00, 185.77it/s]Loading weights:  85%|████████▌ | 607/713 [00:05<00:00, 190.77it/s]Loading weights:  88%|████████▊ | 627/713 [00:05<00:00, 189.47it/s]Loading weights:  91%|█████████ | 646/713 [00:05<00:00, 187.38it/s]Loading weights:  94%|█████████▎| 667/713 [00:06<00:00, 192.36it/s]Loading weights:  96%|█████████▋| 687/713 [00:06<00:00, 191.27it/s]Loading weights:  99%|█████████▉| 707/713 [00:06<00:00, 173.23it/s]Loading weights: 100%|██████████| 713/713 [00:06<00:00, 113.46it/s]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+16/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+32/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+48/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+64/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+80/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+96/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+112/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+128/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+144/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+160/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+176/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+192/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+208/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+224/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+240/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+256/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+272/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+288/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+304/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+320/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+322/322
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+{
+  "total": 322,
+  "accuracy": 0.984472049689441,
+  "confusion": {
+    "fight": {
+      "fight": 193,
+      "none": 3,
+      "other": 0
+    },
+    "none": {
+      "fight": 2,
+      "none": 124,
+      "other": 0
+    }
+  },
+  "fight_recall": 0.9846938775510204,
+  "fight_precision": 0.9897435897435898,
+  "fight_f1": 0.9872122762148339,
+  "fight_support": 196,
+  "none_recall": 0.9841269841269841,
+  "none_precision": 0.9763779527559056,
+  "none_f1": 0.9802371541501976,
+  "none_support": 126,
+  "macro_f1": 0.9837247151825157,
+  "threshold": 0.5,
+  "roc_auc": 0.9995545837382572,
+  "pr_auc_fight": 0.9997166603024351,
+  "ci95": {
+    "accuracy": [
+      0.968944099378882,
+      0.9968944099378882
+    ],
+    "macro_f1": [
+      0.9682383113040047,
+      0.9966955040382582
+    ],
+    "fight_recall": [
+      0.9668508287292817,
+      1.0
+    ],
+    "none_recall": [
+      0.959349593495935,
+      1.0
+    ]
+  },
+  "free_generation": {
+    "accuracy": 0.984472049689441,
+    "format_compliance": 1.0
+  },
+  "throughput": {
+    "batch_size": 16,
+    "images": 322,
+    "seconds": 84.61606741999276,
+    "images_per_second": 3.805423837552619,
+    "peak_vram_gb": 5.7918925285339355
+  },
+  "latency": {
+    "batch_size": 1,
+    "images": 50,
+    "p50_ms": 361.7259811144322,
+    "p95_ms": 470.9777811076492,
+    "mean_ms": 383.2863657036796
+  }
+}

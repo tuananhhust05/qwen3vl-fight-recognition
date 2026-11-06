@@ -1,0 +1,83 @@
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:38,  4.50it/s]/usr/local/lib/python3.12/dist-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|          | 5/713 [00:00<00:39, 17.74it/s]Loading weights:   4%|▎         | 26/713 [00:00<00:08, 81.59it/s]Loading weights:   7%|▋         | 47/713 [00:00<00:05, 118.90it/s]Loading weights:   9%|▉         | 64/713 [00:00<00:04, 133.76it/s]Loading weights:  11%|█▏        | 81/713 [00:00<00:04, 144.45it/s]Loading weights:  14%|█▍        | 102/713 [00:00<00:03, 159.54it/s]Loading weights:  17%|█▋        | 119/713 [00:00<00:03, 162.21it/s]Loading weights:  19%|█▉        | 136/713 [00:01<00:03, 163.41it/s]Loading weights:  22%|██▏       | 157/713 [00:01<00:03, 171.92it/s]Loading weights:  25%|██▍       | 175/713 [00:01<00:03, 169.79it/s]Loading weights:  27%|██▋       | 193/713 [00:01<00:03, 163.74it/s]Loading weights:  30%|██▉       | 213/713 [00:01<00:02, 167.72it/s]Loading weights:  33%|███▎      | 234/713 [00:01<00:02, 173.27it/s]Loading weights:  35%|███▌      | 252/713 [00:01<00:02, 173.35it/s]Loading weights:  38%|███▊      | 270/713 [00:01<00:02, 166.42it/s]Loading weights:  41%|████      | 290/713 [00:01<00:02, 169.75it/s]Loading weights:  44%|████▎     | 311/713 [00:02<00:02, 174.42it/s]Loading weights:  46%|████▌     | 329/713 [00:02<00:02, 175.63it/s]Loading weights:  49%|████▊     | 347/713 [00:02<00:02, 169.41it/s]Loading weights:  51%|█████▏    | 367/713 [00:02<00:01, 173.15it/s]Loading weights:  54%|█████▍    | 388/713 [00:02<00:01, 178.18it/s]Loading weights:  64%|██████▎   | 454/713 [00:02<00:00, 312.24it/s]Loading weights:  80%|████████  | 572/713 [00:02<00:00, 554.99it/s]Loading weights:  96%|█████████▋| 688/713 [00:02<00:00, 708.72it/s]Loading weights: 100%|██████████| 713/713 [00:02<00:00, 246.14it/s]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+16/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+32/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+48/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+64/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+80/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+96/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+112/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+128/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+144/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+160/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+162/162
+{
+  "total": 162,
+  "accuracy": 1.0,
+  "confusion": {
+    "fight": {
+      "fight": 98,
+      "none": 0,
+      "other": 0
+    },
+    "none": {
+      "fight": 0,
+      "none": 64,
+      "other": 0
+    }
+  },
+  "fight_recall": 1.0,
+  "fight_precision": 1.0,
+  "fight_f1": 1.0,
+  "fight_support": 98,
+  "none_recall": 1.0,
+  "none_precision": 1.0,
+  "none_f1": 1.0,
+  "none_support": 64,
+  "macro_f1": 1.0,
+  "threshold": 0.5,
+  "roc_auc": 1.0,
+  "pr_auc_fight": 1.0,
+  "ci95": {
+    "accuracy": [
+      1.0,
+      1.0
+    ],
+    "macro_f1": [
+      1.0,
+      1.0
+    ],
+    "fight_recall": [
+      1.0,
+      1.0
+    ],
+    "none_recall": [
+      1.0,
+      1.0
+    ]
+  },
+  "free_generation": {
+    "accuracy": 1.0,
+    "format_compliance": 1.0
+  },
+  "throughput": {
+    "batch_size": 16,
+    "images": 162,
+    "seconds": 11.80338214081712,
+    "images_per_second": 13.72487970543544,
+    "peak_vram_gb": 5.7964701652526855
+  }
+}

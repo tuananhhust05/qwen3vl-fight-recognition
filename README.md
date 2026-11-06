@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.11-ee4c2c.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-5.12-yellow.svg)](https://huggingface.co/docs/transformers)
-[![License](https://img.shields.io/badge/License-Research-lightgrey.svg)](#license-and-data-attribution)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license-and-data-attribution)
 
 **4-bit QLoRA adaptation of a vision–language model for binary `fight` / `none` recognition from a single RGB image, evaluated on a leakage-audited held-out split over 5 training seeds.**
 
@@ -181,7 +181,7 @@ Intended for research and defensive moderation prototypes. Do not deploy for unl
 
 ## License and data attribution
 
-Code is provided for research use. Upstream assets keep their licenses:
+Code is released under the [MIT License](LICENSE). Datasets, model weights and other upstream assets are not covered by it and keep their own licenses:
 
 * **Qwen3-VL-4B-Instruct**: [Qwen / Alibaba](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 * **Action-Net**: [OlafenwaMoses/Action-Net](https://github.com/OlafenwaMoses/Action-Net)
