@@ -1,0 +1,6 @@
+image_size=(1500, 1000)
+default size={'longest_edge': 16777216, 'shortest_edge': 65536}
+default grid_thw=(1, 62, 94) visual_tokens=1457
+v1 limit_pixels grid_thw=(1, 62, 94) visual_tokens=1457
+limited size={'longest_edge': 401408, 'shortest_edge': 100352}
+limited grid_thw=(1, 32, 48) visual_tokens=384

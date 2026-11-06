@@ -1,5 +1,5 @@
-torch
-transformers>=4.57.0
-peft>=0.21.0
+torch>=2.6
+transformers>=5.0
+peft>=0.21
 accelerate
 pillow
