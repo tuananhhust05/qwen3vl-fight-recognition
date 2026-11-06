@@ -1,0 +1,83 @@
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:35,  4.58it/s]/usr/local/lib/python3.12/dist-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|          | 4/713 [00:00<00:49, 14.24it/s]Loading weights:   3%|▎         | 19/713 [00:00<00:11, 61.94it/s]Loading weights:   5%|▍         | 34/713 [00:00<00:07, 91.15it/s]Loading weights:   7%|▋         | 48/713 [00:00<00:06, 102.90it/s]Loading weights:   9%|▉         | 63/713 [00:00<00:05, 116.63it/s]Loading weights:  11%|█         | 78/713 [00:00<00:05, 126.37it/s]Loading weights:  13%|█▎        | 92/713 [00:00<00:04, 125.86it/s]Loading weights:  15%|█▌        | 107/713 [00:01<00:04, 132.13it/s]Loading weights:  17%|█▋        | 122/713 [00:01<00:04, 137.02it/s]Loading weights:  19%|█▉        | 136/713 [00:01<00:04, 132.75it/s]Loading weights:  21%|██        | 151/713 [00:01<00:04, 136.72it/s]Loading weights:  23%|██▎       | 166/713 [00:01<00:03, 140.27it/s]Loading weights:  25%|██▌       | 181/713 [00:01<00:04, 131.44it/s]Loading weights:  28%|██▊       | 198/713 [00:01<00:03, 140.23it/s]Loading weights:  30%|██▉       | 213/713 [00:01<00:03, 136.28it/s]Loading weights:  32%|███▏      | 228/713 [00:01<00:03, 139.21it/s]Loading weights:  34%|███▍      | 243/713 [00:02<00:03, 141.98it/s]Loading weights:  36%|███▌      | 258/713 [00:02<00:03, 133.34it/s]Loading weights:  39%|███▊      | 275/713 [00:02<00:03, 142.82it/s]Loading weights:  41%|████      | 290/713 [00:02<00:03, 138.23it/s]Loading weights:  43%|████▎     | 305/713 [00:02<00:02, 140.57it/s]Loading weights:  45%|████▍     | 320/713 [00:02<00:02, 143.11it/s]Loading weights:  47%|████▋     | 335/713 [00:02<00:02, 134.04it/s]Loading weights:  49%|████▉     | 352/713 [00:02<00:02, 142.71it/s]Loading weights:  51%|█████▏    | 367/713 [00:02<00:02, 138.24it/s]Loading weights:  54%|█████▎    | 382/713 [00:03<00:02, 140.62it/s]Loading weights:  56%|█████▌    | 398/713 [00:03<00:02, 145.21it/s]Loading weights:  62%|██████▏   | 440/713 [00:03<00:01, 222.28it/s]Loading weights:  68%|██████▊   | 482/713 [00:03<00:00, 278.30it/s]Loading weights:  73%|███████▎  | 524/713 [00:03<00:00, 318.70it/s]Loading weights:  79%|███████▉  | 566/713 [00:03<00:00, 347.12it/s]Loading weights:  85%|████████▌ | 608/713 [00:03<00:00, 367.28it/s]Loading weights:  91%|█████████ | 650/713 [00:03<00:00, 382.16it/s]Loading weights:  97%|█████████▋| 689/713 [00:03<00:00, 383.07it/s]Loading weights: 100%|██████████| 713/713 [00:03<00:00, 181.08it/s]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+16/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+32/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+48/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+64/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+80/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+96/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+112/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+128/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+144/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+160/162
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+162/162
+{
+  "total": 162,
+  "accuracy": 0.9876543209876543,
+  "confusion": {
+    "fight": {
+      "fight": 98,
+      "none": 0,
+      "other": 0
+    },
+    "none": {
+      "fight": 2,
+      "none": 62,
+      "other": 0
+    }
+  },
+  "fight_recall": 1.0,
+  "fight_precision": 0.98,
+  "fight_f1": 0.98989898989899,
+  "fight_support": 98,
+  "none_recall": 0.96875,
+  "none_precision": 1.0,
+  "none_f1": 0.9841269841269841,
+  "none_support": 64,
+  "macro_f1": 0.987012987012987,
+  "threshold": 0.5,
+  "roc_auc": 1.0,
+  "pr_auc_fight": 1.0,
+  "ci95": {
+    "accuracy": [
+      0.9691358024691358,
+      1.0
+    ],
+    "macro_f1": [
+      0.9670235720392459,
+      1.0
+    ],
+    "fight_recall": [
+      1.0,
+      1.0
+    ],
+    "none_recall": [
+      0.9215686274509803,
+      1.0
+    ]
+  },
+  "free_generation": {
+    "accuracy": 0.9876543209876543,
+    "format_compliance": 1.0
+  },
+  "throughput": {
+    "batch_size": 16,
+    "images": 162,
+    "seconds": 34.35134687414393,
+    "images_per_second": 4.7159722905053405,
+    "peak_vram_gb": 5.7964701652526855
+  }
+}
